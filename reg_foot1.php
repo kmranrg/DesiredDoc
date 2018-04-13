@@ -1,0 +1,2 @@
+<div class="jumbotron text-center" style="padding:1px"><h3>All Rights Reserved</h3></div>
+<div class="jumbotron text-center" style="padding:5px"><h3>Designed By : <strong>Kumar Anurag</strong></h3></div>
