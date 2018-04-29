@@ -59,7 +59,7 @@
 			    $qry = "update users set fname='" . $FNM . "',lname='" . $LNM . "',dob='" . $dob . "',pass='" . $PWD . "',phno='" . $phone . "',pimage='" . $row[ 6 ] . "',gen='" . $op1 . "',cntry='" . $op2 . "' where email='" . $UID . "'";
                 if ( mysqli_query( $dt, $qry ) ) 
                 {
-				header( "Location:reg_welcome.php" );
+				header( "Location:homepage.php" );
 			    }
 	    	}
             if ( @$fileName != NULL ) 
@@ -67,7 +67,7 @@
 			    $qry = "update users set fname='" . $FNM . "',lname='" . $LNM . "',dob='" . $dob . "',pass='" . $PWD . "',phno='" . $phone . "',pimage='" . $fileName . "',gen='" . $op1 . "',cntry='" . $op2 . "' where email='" . $UID . "'";
                 if ( mysqli_query( $dt, $qry ) ) 
                 {
-				    header( "Location:reg_welcome.php" );
+				    header( "Location:homepage.php" );
 			    }
             }
             else 

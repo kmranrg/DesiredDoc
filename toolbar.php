@@ -16,7 +16,7 @@
 				<span class="icon-bar"></span>
 			</button>
 		
-			<a href="reg_welcome.php" class="navbar-brand" style="font-size:22px;font-family:'Comic Sans MS', cursive;">
+			<a href="homepage.php" class="navbar-brand" style="font-size:22px;font-family:'Comic Sans MS', cursive;">
         <strong>DESIRED DOC   </strong>
       </a>
 
@@ -26,12 +26,12 @@
 
 			<ul class="nav navbar-nav">
 				<li><a href=""></a></li>
-				<li class="active"><a href="reg_welcome.php">Home</a></li>
-				<li><a href="reg_cdl.php">C</a></li>
-				<li><a href="reg_cppdl.php">C++</a></li>
-				<li><a href="reg_csharpdl.php">C#</a></li>
-				<li><a href="reg_javadl.php">JAVA</a></li>
-				<li><a href="test.php">My Account</a></li>
+				<li class="active"><a href="homepage.php">Home</a></li>
+				<li><a href="c.php">C</a></li>
+				<li><a href="cpp.php">C++</a></li>
+				<li><a href="csharp.php">C#</a></li>
+				<li><a href="java.php">JAVA</a></li>
+				<li><a href="update_profile.php">My Account</a></li>
 				<li><a href="contact_us.php">Contact Us</a></li>
 				<li><a href=""></a></li>
 				<li><a href=""></a></li>
@@ -55,7 +55,7 @@
               if ( @$_POST[ "sout" ] == "Sign-out" ) 
               {
 							  session_destroy();
-							  header( "Location:reg_login.php" );
+							  header( "Location:login.php" );
 						  }
             }
           ?>

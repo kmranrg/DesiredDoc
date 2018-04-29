@@ -21,12 +21,13 @@
 		<title>Registration</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	</head>
 
 	<body>
 
 		<?php 	
-			include('reg_head.php');
+			include('header.php');
 		?>
 
 		<marquee>
@@ -151,7 +152,7 @@
 										else if ( ( @$_POST[ "UID" ] ) != $row[ 2 ] ) 
 										{ 
 											//for inserting the record
-											include( 'reg_insrtfunc.php' );
+											include( 'func_insertrecord.php' );
 											insertrecord();
 										}
 									}
@@ -172,12 +173,12 @@
 			//if login button is clicked then redirect it to the login page
 			if((@$_POST["login"])=="Login")
 			{
-				header("Location:reg_login.php");
+				header("Location:login.php");
 			}
 		?>
 
 		<?php 	
-			include('reg_foot.php');
+			include('footer.php');
 		?>
 	</body>
 </html>

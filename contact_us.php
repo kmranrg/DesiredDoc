@@ -2,7 +2,7 @@
 	//after session out page will redirect to login page
 	session_start();
 	if ( !isset( $_SESSION[ "email" ] ) ) {
-		header( "Location:reg_login.php" );
+		header( "Location:login.php" );
 	}
 ?>
 
@@ -14,6 +14,7 @@
 		<title>Contact Us</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<style>
 
 			input {
@@ -36,7 +37,7 @@
 	<body>
 
 		<?php 
-			include('reg_head1.php');
+			include('toolbar.php');
 		?>
 		<br/>
 		<br/>
@@ -110,7 +111,7 @@
 		?>
 
 		<?php 
-			include('reg_foot.php');
+			include('footer.php');
 		?>
 	</body>
 </html>
