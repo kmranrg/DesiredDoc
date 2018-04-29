@@ -8,9 +8,9 @@
 ?>
 
 <?php
-	$db = mysqli_connect( "localhost", "root", "", "ukanlibrary" );
+	$db = mysqli_connect( "localhost", "root", "", "desireddoc" );
 	@$UID = $_SESSION[ "email" ];
-	$res = mysqli_query( $db, "select * from booklib where email='" . $UID . "'" );
+	$res = mysqli_query( $db, "select * from users where email='" . $UID . "'" );
 	$row = mysqli_fetch_row( $res );
 ?>
 

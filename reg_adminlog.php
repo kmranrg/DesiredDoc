@@ -32,8 +32,8 @@
 	
 		<?php
 			//for printing the rows of the table
-			$dblink = mysqli_connect( "localhost", "root", "", "ukanlibrary" );
-			$qry = "select * from booklib";
+			$dblink = mysqli_connect( "localhost", "root", "", "desireddoc" );
+			$qry = "select * from users";
 			$res = mysqli_query( $dblink, $qry );
 			$i = 1;
 			echo '<table width="100%" border="2">

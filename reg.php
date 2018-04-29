@@ -1,6 +1,6 @@
 <?php
-	$dblink = mysqli_connect( "localhost", "root", "", "ukanlibrary" );
-	$qry = "select * from booklib";
+	$dblink = mysqli_connect( "localhost", "root", "", "desireddoc" );
+	$qry = "select * from users";
 	$res = mysqli_query( $dblink, $qry );
 	$row = mysqli_fetch_row( $res );
 ?>

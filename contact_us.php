@@ -100,7 +100,7 @@
 		<?php 
 			if(@$_POST["subsc"]=="Subscribe" && @$_POST["subs"]!=NULL)
 			{
-  				$dt=mysqli_connect("localhost","root","","ukanlibrary");
+  				$dt=mysqli_connect("localhost","root","","desireddoc");
   				@$sub=$_POST["subs"];
   				if($res=mysqli_query($dt,"insert into subscribe values('".$sub."')"))
  				{

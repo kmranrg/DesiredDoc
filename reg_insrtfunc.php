@@ -1,9 +1,9 @@
 <?php
 function  insertrecord()
 { 
-  $dt=mysqli_connect("localhost","root","","ukanlibrary");
+  $dt=mysqli_connect("localhost","root","","desireddoc");
   @$UID=$_GET["email"];
-  $res=mysqli_query($dt,"select * from booklib where email='".$UID."'");
+  $res=mysqli_query($dt,"select * from users where email='".$UID."'");
   $row=mysqli_fetch_row($res);
 	
  if(isset($_POST["reg"]))
@@ -55,7 +55,7 @@ function  insertrecord()
     //end of file upload
     if(@$fileName!=NULL)
     {
-      if($res=mysqli_query($dt,"insert into booklib values('".$FNM."','".$LNM."','".$UID."','".$dob."','".$PWD."','".$phone."','".$fileName."','".$op1."','".$op2."')"))
+      if($res=mysqli_query($dt,"insert into users values('".$FNM."','".$LNM."','".$UID."','".$dob."','".$PWD."','".$phone."','".$fileName."','".$op1."','".$op2."')"))
       { 
         echo '<script>window.alert("Successfully registered");</script>';
       }
@@ -63,7 +63,7 @@ function  insertrecord()
     if(@$fileName==NULL)
     {   
       $ar=array("defpro.png");
-      if($res=mysqli_query($dt,"insert into booklib values('".$FNM."','".$LNM."','".$UID."','".$dob."','".$PWD."','".$phone."','".$ar[0]."','".$op1."','".$op2."')"))
+      if($res=mysqli_query($dt,"insert into users values('".$FNM."','".$LNM."','".$UID."','".$dob."','".$PWD."','".$phone."','".$ar[0]."','".$op1."','".$op2."')"))
       { 
         echo '<script>window.alert("Successfully registered");</script>';
       }
