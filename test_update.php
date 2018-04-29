@@ -29,7 +29,7 @@
 			    @$fileName = preg_replace( "#[^a-z0-9.]#i", "", $fileName );
                 
                 //limit the file type
-			    $target_dir = "pimages/";
+			    $target_dir = "images/profile/";
 			    $target_file = $target_dir . basename( $_FILES[ "file" ][ "name" ] );
 			    $imageFileType = pathinfo( $target_file, PATHINFO_EXTENSION );
                 if ( $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" ) 
@@ -49,7 +49,7 @@
                 if ( empty( $error ) ) 
                 {
 				    @$fileName = $_FILES[ 'file' ][ 'name' ];
-				    move_uploaded_file( $filetmp, "pimages/$fileName" );
+				    move_uploaded_file( $filetmp, "images/profile/$fileName" );
 			    }
 		    }
         
