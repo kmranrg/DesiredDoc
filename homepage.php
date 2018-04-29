@@ -42,7 +42,7 @@
       <div class="carousel-inner" role="listbox">
 			  
         <div class="item active">
-				  <img class="first-slide" src="images/homepage/s1.jpg" alt="First slide" style="height:660px;width:1800px;">
+				  <img class="first-slide" src="images/homepage/sl1.jpg" alt="First slide" style="height:660px;width:1800px;">
 				  <div class="container">
 					  <div class="carousel-caption">
 						  <h1><strong>Welcome to the Smart Way of Learning</strong></h1>
@@ -57,7 +57,7 @@
 			  </div>
 			  
         <div class="item">
-				  <img class="second-slide" src="images/homepage/s2.jpg" alt="Second slide" style="height:660px;width:1800px;">
+				  <img class="second-slide" src="images/homepage/sl2.jpg" alt="Second slide" style="height:660px;width:1800px;">
 				  <div class="container">
 					  <div class="carousel-caption">
 						  <h1><b>We respect your convenience. Save the notes for offline reading.</b></h1>
@@ -72,7 +72,7 @@
 			  </div>
 			
         <div class="item">
-				  <img class="third-slide" src="images/homepage/s3.jpg" alt="Third slide" style="height:660px;width:1800px;">
+				  <img class="third-slide" src="images/homepage/sl3.jpg" alt="Third slide" style="height:660px;width:1800px;">
 				  <div class="container">
 					  <div class="carousel-caption">
 						  <h1><b>Don't need to be online everytime. Learn from the downloaded offline files</b></h1>
