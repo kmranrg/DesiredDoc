@@ -3,7 +3,7 @@
 	session_start();
 	if ( !isset( $_SESSION[ "email" ] ) ) 
 	{
-		header( "Location:reg_login.php" );
+		header( "Location:login.php" );
 	}
 ?>
 
@@ -24,12 +24,13 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	</head>
 
 	<body>
 		
 		<?php 	
-			include('reg_head.php');
+			include('header.php');
 		?>
 		
 		<div class="container">
@@ -90,7 +91,7 @@
 							<div class="form-group">
 								<p>(only jpg and png,less than 2mb)</p>
 								<img src="images/profile/<?php echo $row[6]; ?>" height="100px" width="100px"/>
-								</br>
+								<br/>
 								<input type="file" name="file" id="fileToUpload">
 							</div>
 
@@ -139,19 +140,19 @@
 									else if ( ( @$_POST[ "PWD" ] ) == ( @$_POST[ "CPWD" ] ) ) 
 									{ 
 										//for updating the record
-										include( 'test_update.php' );
+										include( 'func_updaterecord.php' );
 										updaterecord();
 									}
 								}
 								if ( ( @$_POST[ "del" ] ) == "Delete" ) 
 								{ 
 									//for deleting the record
-									include( 'test_delete.php' );
+									include( 'func_deleterecord.php' );
 									deleterecord();
 								}
 								if ( ( @$_POST[ "cncl" ] ) == "Cancel" ) 
 								{
-									header( "Location:reg_welcome.php" );
+									header( "Location:homepage.php" );
 								}
 							?>
 						</form>
@@ -161,7 +162,7 @@
 		</div>
 	
 		<?php 	
-			include('reg_foot.php');
+			include('footer.php');
 		?>
 
 	</body>

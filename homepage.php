@@ -3,7 +3,7 @@
   session_start();
   if ( !isset( $_SESSION[ "email" ] ) ) 
   {
-	  header( "Location:reg_login.php" );
+	  header( "Location:login.php" );
   }
 ?>
 
@@ -24,7 +24,7 @@
   <body>
 	  
     <?php 
-      include('reg_head1.php');
+      include('toolbar.php');
     ?>
 
 	  <!--Slider Start -->
@@ -111,28 +111,28 @@
 			  <img src="images/homepage/pl1.png" class="img-thumbnail img-circle"/>
 			  <br/>
 			  <br/>
-			  <a href="reg_cdl.php" class="btn btn-primary btn-block" style="background-color:#333">C Programming Language</a>
+			  <a href="c.php" class="btn btn-primary btn-block" style="background-color:#333">C Programming Language</a>
 		  </div>
 
 		  <div class="col-md-3">
 			  <img src="images/homepage/pl2.png" class="img-thumbnail img-circle"/>
 			  <br/>
 			  <br/>
-			  <a href="reg_cppdl.php" class="btn btn-primary btn-block" style="background-color:#333">C++ Programming Language</a>
+			  <a href="cpp.php" class="btn btn-primary btn-block" style="background-color:#333">C++ Programming Language</a>
 		  </div>
 
 		  <div class="col-md-3">
 			  <img src="images/homepage/pl3.png" class="img-thumbnail img-circle"/>
 			  <br/>
 			  <br/>
-			  <a href="reg_csharpdl.php" class="btn btn-primary btn-block" style="background-color:#333">C# Programming Language</a>
+			  <a href="csharp.php" class="btn btn-primary btn-block" style="background-color:#333">C# Programming Language</a>
 		  </div>
 		
       <div class="col-md-3">
 			  <img src="images/homepage/pl4.png" class="img-thumbnail img-circle"/>
 			  <br/>
 			  <br/>
-			  <a href="reg_javadl.php" class="btn btn-primary btn-block" style="background-color:#333">JAVA Programming Language</a>
+			  <a href="java.php" class="btn btn-primary btn-block" style="background-color:#333">JAVA Programming Language</a>
 		  </div>
 	
     </div>
@@ -141,7 +141,7 @@
 	  <br/>
 	
     <?php 
-      include('reg_foot.php');
+      include('footer.php');
     ?>
       
   </body>

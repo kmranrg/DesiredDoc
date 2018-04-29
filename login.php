@@ -1,22 +1,23 @@
 <!doctype html>
 <html>
 
-	<head>
+	<head  
 		<meta charset="utf-8">
 		<title>Login</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	</head>
 
 	<body>
 
 		<?php 
-			include('reg_head.php');
+			include('header.php');
 		?>
 
-		<div class="container">
+		<div class="container" style="margin-top: 80px;margin-bottom: 110px">
 			<div class="col-md-6 col-md-offset-3">
-				<div class="panel panel-primary" style="margin-top:50px; margin-bottom:150px; background-color:#9CF;">
+				<div class="panel panel-primary" style="background-color:#9CF;">
 				
 					<div class="panel-heading">
 						<h4>Login</h4>
@@ -49,7 +50,7 @@
 										{
 											session_start();
 											$_SESSION[ "email" ] = $row[ 2 ];
-											header( "Location:reg_welcome.php" );
+											header( "Location:homepage.php" );
 										} 
 										else 
 										{
@@ -74,7 +75,7 @@
 									{
 										session_start();
 										$_SESSION[ "s" ] = "admin";
-										header( "Location:reg_adminlog.php" );
+										header( "Location:admin_log.php" );
 									} 
 									else 
 									{
@@ -88,7 +89,7 @@
 				</div>
 			</div>
 		</div>
-
+	
 		<?php 
 			if((@$_POST["reg"])=="Sign-up")
 			{
@@ -97,8 +98,8 @@
 		?>
 
 		<?php 
-			include('reg_foot.php'); 
+			include('footer.php'); 
 		?>
-
+		
 	</body>
 </html>

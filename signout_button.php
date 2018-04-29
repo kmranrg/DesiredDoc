@@ -11,7 +11,7 @@
 		if ( @$_POST[ "sout" ] == "Sign-out" ) 
 		{
 			session_destroy();
-			header( "Location:reg_login.php" );
+			header( "Location:login.php" );
 		}
 	}
 ?>

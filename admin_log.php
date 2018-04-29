@@ -2,7 +2,7 @@
 	session_start();
 	if ( !isset( $_SESSION[ "s" ] ) ) 
 	{
-		header( "Location:reg_login.php" );
+		header( "Location:login.php" );
 	}
 ?>
 
@@ -15,13 +15,14 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	</head>
 
 	<body>
 		
 		<?php 	
-			include('reg_head.php');
-			include('reg_preview.php');
+			include('header.php');
+			include('signout_button.php');
 		?>
 		<br/>
 
@@ -64,7 +65,7 @@
     				<td>' . $row[ 6 ] . '</td>
     				<td>' . $row[ 7 ] . '</td>
 					<td>' . $row[ 8 ] . '</td>
-    				<td><a href="reg_updtdata.php?email=' . $row[ 2 ] . '">Edit</a></td>
+    				<td><a href="update_profile.php?email=' . $row[ 2 ] . '">Edit</a></td>
   				</tr>';
 				$i++;
 			}
@@ -72,9 +73,18 @@
 		?>
 		<br/>
 		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
 
 		<?php 	
-			include('reg_foot1.php');
+			include('footer.php');
 		?>
 	</body>
 </html>

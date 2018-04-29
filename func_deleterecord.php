@@ -20,7 +20,7 @@
 			if ( mysqli_query( $db, $qry ) ) 
 			{
 				session_destroy();
-				header( "Location:reg_welcome.php" );
+				header( "Location:homepage.php" );
 			} 
 			else 
 			{
