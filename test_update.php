@@ -2,9 +2,9 @@
 
     function updaterecord() 
     {
-	    $dt = mysqli_connect( "localhost", "root", "", "ukanlibrary" );
+	    $dt = mysqli_connect( "localhost", "root", "", "desireddoc" );
 	    @$UID = $_SESSION[ "email" ];
-	    $res = mysqli_query( $dt, "select * from booklib where email='" . $UID . "'" );
+	    $res = mysqli_query( $dt, "select * from users where email='" . $UID . "'" );
 	    $row = mysqli_fetch_row( $res );
 
         if ( isset( $_POST[ "updt" ] ) ) 
@@ -56,7 +56,7 @@
             //end of file upload
             if ( @$fileName == NULL ) 
             {
-			    $qry = "update booklib set fname='" . $FNM . "',lname='" . $LNM . "',dob='" . $dob . "',pass='" . $PWD . "',phno='" . $phone . "',pimage='" . $row[ 6 ] . "',gen='" . $op1 . "',cntry='" . $op2 . "' where email='" . $UID . "'";
+			    $qry = "update users set fname='" . $FNM . "',lname='" . $LNM . "',dob='" . $dob . "',pass='" . $PWD . "',phno='" . $phone . "',pimage='" . $row[ 6 ] . "',gen='" . $op1 . "',cntry='" . $op2 . "' where email='" . $UID . "'";
                 if ( mysqli_query( $dt, $qry ) ) 
                 {
 				header( "Location:reg_welcome.php" );
@@ -64,7 +64,7 @@
 	    	}
             if ( @$fileName != NULL ) 
             {
-			    $qry = "update booklib set fname='" . $FNM . "',lname='" . $LNM . "',dob='" . $dob . "',pass='" . $PWD . "',phno='" . $phone . "',pimage='" . $fileName . "',gen='" . $op1 . "',cntry='" . $op2 . "' where email='" . $UID . "'";
+			    $qry = "update users set fname='" . $FNM . "',lname='" . $LNM . "',dob='" . $dob . "',pass='" . $PWD . "',phno='" . $phone . "',pimage='" . $fileName . "',gen='" . $op1 . "',cntry='" . $op2 . "' where email='" . $UID . "'";
                 if ( mysqli_query( $dt, $qry ) ) 
                 {
 				    header( "Location:reg_welcome.php" );

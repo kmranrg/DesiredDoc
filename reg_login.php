@@ -41,8 +41,8 @@
 									@$PWD = $_POST[ "PWD" ];
 									if ( isset( $_POST[ "login" ] ) ) 
 									{
-										$dblink = mysqli_connect( "localhost", "root", "", "ukanlibrary" );
-										$qry = "select * from booklib where email='" . $UID . "' and pass='" . $PWD . "'";
+										$dblink = mysqli_connect( "localhost", "root", "", "desireddoc" );
+										$qry = "select * from users where email='" . $UID . "' and pass='" . $PWD . "'";
 										$res = mysqli_query( $dblink, $qry );
 										@$row = mysqli_fetch_row( $res );
 										if ( count( $row ) > 0 ) 
@@ -60,7 +60,7 @@
 
 								<input type="submit" class="btn btn-primary" value="Sign-up" name="reg"/>
 							
-								<!--for providing the space b/w sing-up and admin login button -->
+								<!--for providing the space b/w sign-up and admin login button -->
 								&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 							
 								<input type="submit" class="btn btn-danger" value="Admin Login" name="adm"/>
