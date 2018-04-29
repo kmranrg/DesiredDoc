@@ -50,7 +50,7 @@
 			<br/>
 
 			<div class="col-md-3">
-				<img src="imgwel/1.jpg" class="img-thumbnail img-circle"/>
+				<img src="images/contact_us/1.jpg" class="img-thumbnail img-circle"/>
 				<br/>
 				<br/>
 			</div>

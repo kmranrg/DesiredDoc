@@ -42,7 +42,7 @@
       <div class="carousel-inner" role="listbox">
 			  
         <div class="item active">
-				  <img class="first-slide" src="imgwel/s1.jpg" alt="First slide" style="height:660px;width:1800px;">
+				  <img class="first-slide" src="images/homepage/s1.jpg" alt="First slide" style="height:660px;width:1800px;">
 				  <div class="container">
 					  <div class="carousel-caption">
 						  <h1><strong>Welcome to the Smart Way of Learning</strong></h1>
@@ -57,7 +57,7 @@
 			  </div>
 			  
         <div class="item">
-				  <img class="second-slide" src="imgwel/s2.jpg" alt="Second slide" style="height:660px;width:1800px;">
+				  <img class="second-slide" src="images/homepage/s2.jpg" alt="Second slide" style="height:660px;width:1800px;">
 				  <div class="container">
 					  <div class="carousel-caption">
 						  <h1><b>We respect your convenience. Save the notes for offline reading.</b></h1>
@@ -72,7 +72,7 @@
 			  </div>
 			
         <div class="item">
-				  <img class="third-slide" src="imgwel/s3.jpg" alt="Third slide" style="height:660px;width:1800px;">
+				  <img class="third-slide" src="images/homepage/s3.jpg" alt="Third slide" style="height:660px;width:1800px;">
 				  <div class="container">
 					  <div class="carousel-caption">
 						  <h1><b>Don't need to be online everytime. Learn from the downloaded offline files</b></h1>
@@ -108,28 +108,28 @@
 		  <br/>
 
 		  <div class="col-md-3">
-			  <img src="imgwel/ct1.png" class="img-thumbnail img-circle"/>
+			  <img src="images/homepage/pl1.png" class="img-thumbnail img-circle"/>
 			  <br/>
 			  <br/>
 			  <a href="reg_cdl.php" class="btn btn-primary btn-block" style="background-color:#333">C Programming Language</a>
 		  </div>
 
 		  <div class="col-md-3">
-			  <img src="imgwel/ct2.png" class="img-thumbnail img-circle"/>
+			  <img src="images/homepage/pl2.png" class="img-thumbnail img-circle"/>
 			  <br/>
 			  <br/>
 			  <a href="reg_cppdl.php" class="btn btn-primary btn-block" style="background-color:#333">C++ Programming Language</a>
 		  </div>
 
 		  <div class="col-md-3">
-			  <img src="imgwel/ct3.png" class="img-thumbnail img-circle"/>
+			  <img src="images/homepage/pl3.png" class="img-thumbnail img-circle"/>
 			  <br/>
 			  <br/>
 			  <a href="reg_csharpdl.php" class="btn btn-primary btn-block" style="background-color:#333">C# Programming Language</a>
 		  </div>
 		
       <div class="col-md-3">
-			  <img src="imgwel/ct4.png" class="img-thumbnail img-circle"/>
+			  <img src="images/homepage/pl4.png" class="img-thumbnail img-circle"/>
 			  <br/>
 			  <br/>
 			  <a href="reg_javadl.php" class="btn btn-primary btn-block" style="background-color:#333">JAVA Programming Language</a>

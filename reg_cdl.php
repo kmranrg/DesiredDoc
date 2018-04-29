@@ -30,7 +30,7 @@
 
 			<div class="col-md-3 col-sm-6 home-feature">
 				<div class="thumbnail">
-					<img src="imgnotes/c/1.png" alt="">
+					<img src="images/c/1.png" alt="">
 					<div class="caption">
 						<a href="notes/c/1.pdf" target="_blank"><h3>What is C Language ?</h3></a>
 						<p>C, Why it is considered as the base for other programming languages ?, Prerequisite.</p>
@@ -40,7 +40,7 @@
 
 			<div class="col-md-3 col-sm-6 home-feature">
 				<div class="thumbnail">
-					<img src="imgnotes/c/2.png" alt="">
+					<img src="images/c/2.png" alt="">
 					<div class="caption">
 						<a href="notes/c/2.pdf" target="_blank"><h3>History of C Language</h3></a>
 						<p>Programming languages that were developed before C language.</p>
@@ -50,7 +50,7 @@
 
 			<div class="col-md-3 col-sm-6 home-feature">
 				<div class="thumbnail">
-					<img src="imgnotes/c/3.jpg" alt="">
+					<img src="images/c/3.jpg" alt="">
 					<div class="caption">
 						<a href="notes/c/3.pdf" target="_blank"><h3>Features of C Language</h3></a>
 						<p>Simple, Machine Independent, Mid-level Language, Rich Library, Fast speed, etc.</p>
@@ -60,7 +60,7 @@
 
 			<div class="col-md-3 col-sm-6 home-feature">
 				<div class="thumbnail">
-					<img src="imgnotes/c/4.png" alt="">
+					<img src="images/c/4.png" alt="">
 					<div class="caption">
 						<a href="notes/c/4.pdf" target="_blank"><h3>How to  install C ?</h3></a>
 						<p>Step by step pictorial representation of installation of C.</p>

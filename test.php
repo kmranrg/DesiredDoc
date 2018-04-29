@@ -89,7 +89,7 @@
 							<b>Profile image:</b>
 							<div class="form-group">
 								<p>(only jpg and png,less than 2mb)</p>
-								<img src="pimages/<?php echo $row[6]; ?>" height="100px" width="100px"/>
+								<img src="images/profile/<?php echo $row[6]; ?>" height="100px" width="100px"/>
 								</br>
 								<input type="file" name="file" id="fileToUpload">
 							</div>

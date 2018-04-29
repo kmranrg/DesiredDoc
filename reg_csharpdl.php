@@ -28,7 +28,7 @@
 			
 			<div class="col-md-3 col-sm-6 home-feature">
 				<div class="thumbnail">
-					<img src="imgnotes/csharp/1.png" alt="">
+					<img src="images/csharp/1.png" alt="">
 					<div class="caption">
 						<a href="notes/csharp/1.pdf" target="_blank"><h3>About C# Programming Language</h3></a>
 						<p>C# Programming Language, Prerequisite.</p>
@@ -38,7 +38,7 @@
 
 			<div class="col-md-3 col-sm-6 home-feature">
 				<div class="thumbnail">
-					<img src="imgnotes/csharp/2.png" alt="">
+					<img src="images/csharp/2.png" alt="">
 					<div class="caption">
 						<a href="notes/csharp/2.pdf" target="_blank"><h3>What is C# ?</h3></a>
 						<p>Different types of secured and robust applications that can be developed using C#.</p>
@@ -48,7 +48,7 @@
 
 			<div class="col-md-3 col-sm-6 home-feature">
 				<div class="thumbnail">
-					<img src="imgnotes/csharp/3.png" alt="">
+					<img src="images/csharp/3.png" alt="">
 					<div class="caption">
 						<a href="notes/csharp/3.pdf" target="_blank"><h3>C++ vs C#</h3></a>
 						<p>Differences between C++ and C# in a tabular form.</p>
@@ -58,7 +58,7 @@
 
 			<div class="col-md-3 col-sm-6 home-feature">
 				<div class="thumbnail">
-					<img src="imgnotes/csharp/4.png" alt="">
+					<img src="images/csharp/4.png" alt="">
 					<div class="caption">
 						<a href="notes/csharp/4.pdf" target="_blank"><h3>JAVA vs C#</h3></a>
 						<p>Differences between JAVA and C# in a tabular form.</p>
