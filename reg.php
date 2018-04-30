@@ -11,14 +11,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<style>
-			marquee {
-				font-size: 20px;
-				border: 5px solid #FF0;
-				background-color: red;
-			}
-		</style>
-		<title>Registration</title>
+		<title>Sign Up</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -30,55 +23,39 @@
 			include('includes/header.php');
 		?>
 
-		<marquee>
-			<strong>10% discount for  early registrations...Hurry up !!!!</strong>
-		</marquee>
-
 		<div class="container">
-			<div class="col-md-12 col-md-offset-0">
-				<div class="panel panel-primary" style="margin-top:30px;background-color:#9CF;">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-primary" style="margin-top:30px;background-color:#eee;">
 				
 					<div class="panel-heading">
-						<h3>Registration Form</h3>
+						<h3>Sign Up</h3>
 					</div>
 				
 					<div class="panel-body">
 						<form action="#" method="post" enctype="multipart/form-data">
 						
-							<b>First name:</b>
-						
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Kumar" name="FNM"/>
-							</div>
-
-							<b>Last name:</b>
-						
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Anurag" name="LNM"/>
+								<input type="text" class="form-control" placeholder="First Name" name="FNM"/>
 							</div>
 						
-							<b>Email-id:</b>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Last name" name="LNM"/>
+							</div>
 						
 							<div class="form-group">
-								<input type="email" class="form-control" placeholder="kan@gmail.com" name="UID"/>
+								<input type="email" class="form-control" placeholder="Email-id" name="UID"/>
 							</div>
 
-							<b>Date of Birth (DOB):</b>
-
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="yyyy-mm-dd" name="dob"/>
+								<input type="text" class="form-control" placeholder="Date of Birth (yyyy-mm-dd)" name="dob"/>
 							</div>
 
-							<b>Password:</b>
-
 							<div class="form-group">
-								<input type="password" class="form-control" placeholder="don't use general words" name="PWD"/>
+								<input type="password" class="form-control" placeholder="Password" name="PWD"/>
 							</div>
 
-							<b>Confirm password:</b>
-
 							<div class="form-group">
-								<input type="password" class="form-control" placeholder="" name="CPWD"/>
+								<input type="password" class="form-control" placeholder="Confirm password" name="CPWD"/>
 							</div>
 
 							<?php 
@@ -88,14 +65,11 @@
 								}
 							?>
 
-							<b>Phone number:</b>
-
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="9876543210" name="phone"/>
+								<input type="text" class="form-control" placeholder="Phone number" name="phone"/>
 							</div>
-
+							
 							<b>Profile image:</b>
-
 							<div class="form-group">
 								<p>(only jpg and png,less than 2mb)</p>
 								<input type="file" name="file" id="fileToUpload">
@@ -133,7 +107,7 @@
 
 							<div class="form-group">
 								<input type="submit" class="btn btn-success" value="Register" name="reg"/>
-							</div>
+								&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 						
 							<?php
 								//to check whether all these feilds are filled or not
@@ -159,7 +133,6 @@
 								}
 							?>
 
-							<div class="form-group">
 								<b>Already registered >></b>
 								<input type="submit" class="btn btn-danger" value="Login" name="login"/>
 							</div>

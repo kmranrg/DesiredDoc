@@ -92,7 +92,7 @@
 			<center>
 				<h2> Subscribe to our newsletter </h2>
 				<form action="#" method="post" enctype="multipart/form-data">
-					<input type="email" name="subs">
+					<input type="email" placeholder="enter your email address" name="subs">
 					<input type="submit" value="Subscribe" id="subscribe" name="subsc">
 				</form>
 			</center>
