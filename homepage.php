@@ -24,7 +24,7 @@
   <body>
 	  
     <?php 
-      include('toolbar.php');
+      include('includes/toolbar.php');
     ?>
 
 	  <!--Slider Start -->
@@ -141,7 +141,7 @@
 	  <br/>
 	
     <?php 
-      include('footer.php');
+      include('includes/footer.php');
     ?>
       
   </body>

@@ -12,7 +12,7 @@
 	<body>
 
 		<?php 
-			include('header.php');
+			include('includes/header.php');
 		?>
 
 		<div class="container" style="margin-top: 80px;margin-bottom: 110px">
@@ -98,7 +98,7 @@
 		?>
 
 		<?php 
-			include('footer.php'); 
+			include('includes/footer.php'); 
 		?>
 		
 	</body>

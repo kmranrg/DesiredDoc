@@ -21,8 +21,8 @@
 	<body>
 		
 		<?php 	
-			include('header.php');
-			include('signout_button.php');
+			include('includes/header.php');
+			include('includes/signout_button.php');
 		?>
 		<br/>
 
@@ -84,7 +84,7 @@
 		<br/>
 
 		<?php 	
-			include('footer.php');
+			include('includes/footer.php');
 		?>
 	</body>
 </html>
