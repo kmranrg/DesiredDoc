@@ -30,7 +30,7 @@
 	<body>
 		
 		<?php 	
-			include('header.php');
+			include('includes/header.php');
 		?>
 		
 		<div class="container">
@@ -140,14 +140,14 @@
 									else if ( ( @$_POST[ "PWD" ] ) == ( @$_POST[ "CPWD" ] ) ) 
 									{ 
 										//for updating the record
-										include( 'func_updaterecord.php' );
+										include( 'includes/func_updaterecord.php' );
 										updaterecord();
 									}
 								}
 								if ( ( @$_POST[ "del" ] ) == "Delete" ) 
 								{ 
 									//for deleting the record
-									include( 'func_deleterecord.php' );
+									include( 'includes/func_deleterecord.php' );
 									deleterecord();
 								}
 								if ( ( @$_POST[ "cncl" ] ) == "Cancel" ) 
@@ -162,7 +162,7 @@
 		</div>
 	
 		<?php 	
-			include('footer.php');
+			include('includes/footer.php');
 		?>
 
 	</body>

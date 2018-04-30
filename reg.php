@@ -27,7 +27,7 @@
 	<body>
 
 		<?php 	
-			include('header.php');
+			include('includes/header.php');
 		?>
 
 		<marquee>
@@ -152,7 +152,7 @@
 										else if ( ( @$_POST[ "UID" ] ) != $row[ 2 ] ) 
 										{ 
 											//for inserting the record
-											include( 'func_insertrecord.php' );
+											include( 'includes/func_insertrecord.php' );
 											insertrecord();
 										}
 									}
@@ -178,7 +178,7 @@
 		?>
 
 		<?php 	
-			include('footer.php');
+			include('includes/footer.php');
 		?>
 	</body>
 </html>

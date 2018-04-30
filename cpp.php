@@ -22,7 +22,7 @@
 	<body>
 		
 		<?php 	
-			include('toolbar.php');
+			include('includes/toolbar.php');
 		?>
 
 		<div class="row text-center">
@@ -73,7 +73,7 @@
 		</br>
 				
 		<?php 	
-			include('footer.php');
+			include('includes/footer.php');
 		?>
 
 	</body>
