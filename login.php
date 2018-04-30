@@ -17,7 +17,7 @@
 
 		<div class="container" style="margin-top: 80px;margin-bottom: 110px">
 			<div class="col-md-6 col-md-offset-3">
-				<div class="panel panel-primary" style="background-color:#9CF;">
+				<div class="panel panel-primary" style="background-color:#eee;">
 				
 					<div class="panel-heading">
 						<h4>Login</h4>
@@ -36,6 +36,7 @@
 
 							<div class="form-group">
 								<input type="submit" class="btn btn-success" value="Sign-in" name="login"/>
+								&emsp;
 							
 								<?php
 									@$UID = $_POST[ "UID" ];
@@ -62,7 +63,7 @@
 								<input type="submit" class="btn btn-primary" value="Sign-up" name="reg"/>
 							
 								<!--for providing the space b/w sign-up and admin login button -->
-								&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+								&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 							
 								<input type="submit" class="btn btn-danger" value="Admin Login" name="adm"/>
 

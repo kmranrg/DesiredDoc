@@ -20,7 +20,7 @@
 
 	<head>	
 		<meta charset="utf-8">
-		<title>Update Profile</title>
+		<title>My Profile</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -35,44 +35,38 @@
 		
 		<div class="container">
 			
-			<div class="col-md-12 col-md-offset-0">
+			<div class="col-md-6 col-md-offset-3">
 				
-				<div class="panel panel-primary" style="background-color:#9CF;">
+				<div class="panel panel-primary" style="background-color:#eee;">
 					<div class="panel-heading">
-						<h3>Update Profile</h3>
+						<h3>My Profile</h3>
 					</div>
 				
 					<div class="panel-body">
 						<form action="#" method="post" enctype="multipart/form-data">
 						
-							<b>First name:</b>
 							<div class="form-group">
 								<input type="text" class="form-control" value="<?php echo $row[0];?>" name="FNM"/>
 							</div>
 						
-							<b>Last name:</b>
 							<div class="form-group">
 								<input type="text" class="form-control" value="<?php echo $row[1];?>" name="LNM"/>
 							</div>
 						
-							<b>Email-id:</b>
 							<div class="form-group">
 								<input type="email" class="form-control" readonly value="<?php echo $row[2];?>" name="UID"/>
 							</div>
 						
-							<b>Date of Birth (DOB):</b>
 							<div class="form-group">
 							<input type="text" class="form-control" value="<?php echo $row[3];?>" name="dob"/>
 							</div>
 
-							<b>Password:</b>
 							<div class="form-group">
 								<input type="password" class="form-control" value="<?php echo $row[4];?>" name="PWD"/>
 							</div>
 						
-							<b>Confirm password:</b>
 							<div class="form-group">
-								<input type="password" class="form-control" name="CPWD"/>
+								<input type="password" class="form-control" placeholder="Confirm Password" name="CPWD"/>
 							</div>
 						
 							<?php 
@@ -82,7 +76,6 @@
 								}
 							?>
 
-							<b>Phone number:</b>
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="eg.9876543210" value="<?php echo $row[5];?>" name="phone"/>
 							</div>
@@ -125,7 +118,8 @@
 
 							<div class="form-group">
 								<input type="submit" class="btn btn-success" value="Update" name="updt"/>
-								<input type="submit" class="btn btn-danger" value="Delete" name="del"/>
+								&emsp;
+								<input type="submit" class="btn btn-danger" value="Delete" name="del"/>	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 								<input type="submit" class="btn btn-primary" value="Cancel" name="cncl"/>
 							</div>
 						
@@ -146,9 +140,16 @@
 								}
 								if ( ( @$_POST[ "del" ] ) == "Delete" ) 
 								{ 
-									//for deleting the record
-									include( 'includes/func_deleterecord.php' );
-									deleterecord();
+									if ( ( ( @$_POST[ "PWD" ] ) == NULL ) || ( ( $_POST[ "CPWD" ] ) == NULL ) || ( ( $_POST[ "phone" ] ) == NULL ) || ( ( $_POST[ "op1" ] ) == NULL ) || ( ( $_POST[ "UID" ] ) == NULL ) || ( ( $_POST[ "LNM" ] ) == NULL ) || ( ( $_POST[ "FNM" ] ) == NULL ) || ( ( $_POST[ "op2" ] ) == NULL ) || ( ( $_POST[ "dob" ] ) == NULL ) ) 
+									{
+										echo '<script>window.alert("Any feild should not be left blank");</script>';
+									} 
+									else if ( ( @$_POST[ "PWD" ] ) == ( @$_POST[ "CPWD" ] ) ) 
+									{ 
+										//for deleting the record
+										include( 'includes/func_deleterecord.php' );
+										deleterecord();
+									}
 								}
 								if ( ( @$_POST[ "cncl" ] ) == "Cancel" ) 
 								{

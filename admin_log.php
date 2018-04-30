@@ -27,7 +27,7 @@
 		<br/>
 
 		<h3>
-			<b>Records</b>
+			<b>Users</b>
 		</h3>
 		<br/>
 	
@@ -73,13 +73,34 @@
 		?>
 		<br/>
 		<br/>
+		
+		<h3>
+			<b>Subscribers</b>
+		</h3>
 		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
+	
+		<?php
+			//for printing the rows of the table
+			$dblink = mysqli_connect( "localhost", "root", "", "desireddoc" );
+			$qry = "select * from subscribe";
+			$res = mysqli_query( $dblink, $qry );
+			$i = 1;
+			echo '<table width="100%" border="2">
+  			<tr>
+    			<th scope="col">Record No.</th>
+    			<th scope="col">Subscribers</th>
+  			</tr>';
+			while ( $row = mysqli_fetch_row( $res ) ) 
+			{
+				echo 
+				'<tr>
+    				<td>' . $i . '</td>
+    				<td>' . $row[ 0 ] . '</td>
+  				</tr>';
+				$i++;
+			}
+			echo '</table>';
+		?>
 		<br/>
 		<br/>
 
