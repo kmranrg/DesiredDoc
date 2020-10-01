@@ -1,5 +1,5 @@
 # DesiredDoc
-Educational Website
+Website for **educational purpose**
 
 How to run this project ?
 
